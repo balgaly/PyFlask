@@ -27,6 +27,11 @@ def snir():
     return "<h1>Hey that's my name!<h1>"
 
 
+@app.route("/snir")
+def snir():
+    return "<h1>Hey it's me<h1>"
+
+
 @app.route("/<name>")
 def user(name):
     return (f"Hello {name}!")

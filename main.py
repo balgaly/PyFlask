@@ -10,7 +10,7 @@ def home():
 
 @app.route("/snir")
 def snir():
-    return "<h1>Hey it's me<h1>"
+    return "<h1>Hey that's my name!<h1>"
 
 
 @app.route("/<name>")

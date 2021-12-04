@@ -7,21 +7,17 @@ app = Flask(__name__)
 def home():
     return "Yo what's up? this is the main page <h1>HELLO<h1>"
 
-
 @app.route("/snir")
 def snir():
-    return "<h1>Hey it's me<h1>"
-
+    return "<h1>Hey that's my name!<h1>"
 
 @app.route("/<name>")
 def user(name):
     return (f"Hello {name}!")
 
-
 @app.route("/admin")
 def admin():
     return redirect(url_for("home"))
-
 
 if __name__ == "__main__":
     app.run()

@@ -7,10 +7,11 @@ app = Flask(__name__)
 def home():
     return "Yo what's up? this is the main page <h1>HELLO<h1>"
 
-  
+
 @app.route("/snir")
 def snir():
     return "<h1>Hey it's me<h1>"
+
 
 @app.route("/<name>")
 def user(name):
